@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Arquivo de dimensoes das imagens que serao carregadas na aplicacao-->
+<resources>
+    <!--Deinindo dois novos recursos que poderao der usados na aplicacao-->
+    <dimen name="itemWidth">100dp</dimen>
+    <dimen name="itemHeight">100dp</dimen>
+</resources>
