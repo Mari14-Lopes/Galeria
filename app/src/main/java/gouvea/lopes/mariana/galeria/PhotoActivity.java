@@ -49,13 +49,13 @@ public class PhotoActivity extends AppCompatActivity {
     public  boolean onCreateOptionsMenu(Menu menu){
         super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_activity_tb, menu);
+        inflater.inflate(R.menu.photo_activity_tb, menu);
         return true;
     }
     //metodo para compartilhar a foto
     void sharePhoto(){
         //gerando Uri para a foto
-        Uri photoUri = FileProvider.getUriForFile(PhotoActivity.this, "gouvea.lopes.mariana.fileprovider", new File(photoPath));
+        Uri photoUri = FileProvider.getUriForFile(PhotoActivity.this, "gouvea.lopes.mariana.galeria.fileprovider", new File(photoPath));
         //intent implicito, indicando que queremos enviar algo para qualquer app que seja capaz de aceitar o envio
         Intent i = new Intent(Intent.ACTION_SEND);
         //dizendo qual arquivo estamos querendo compartilhar
